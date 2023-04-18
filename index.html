@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -17,44 +23,67 @@
   <body>
     <div class="wrapper">
       <div class="overall_result">
-        <p class="odd_p">Your Result</p>
+        <p class="your_result">Your Result</p>
         <div class="circle">
-          <div>
-            <p class="even_p">76</p>
-          </div>
-          <div>
-            <p class="odd_p circle_100">of 100</p>
-          </div>
+          <h1 class="big_76">76</h1>
+
+          <p class="odd_p circle_100">of 100</p>
         </div>
         <p class="even_p great_p">Great</p>
-        <p class="odd_p">
-          You scored higher than 65% of <br />
-          the people who have taken<br />
-          these tests.
-        </p>
+        <div class="you_scored_div">
+          <p class="you_scored">
+            You scored higher than 65% of <br />
+            the people who have taken<br />
+            these tests.
+          </p>
+        </div>
       </div>
       <div class="summary_card">
         <h1>Summary</h1>
         <div class="cards_wrapper">
-          <div class="card card_1">
-            <div class="thunder_img">
+          <div class="card_1">
+            <div class="left_part">
               <img src="icon-reaction.svg" alt="Kiwi standing on oval" />
-            </div>
-            Reaction 80 / 100
-          </div>
-          <p class="card card_2">Memory 92 / 100</p>
-          <p class="card card_3">Verbal 61 / 100</p>
-          <p class="card card_4">Visual 72 / 10</p>
-        </div>
-        <button type="button">Continue</button>
-      </div>
-    </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+              <div class="description_part">Reaction</div>
+            </div>
+            <div class="out_of_100">
+              <span class="black_number">80</span> / 100
+            </div>
+          </div>
+          <div class="card_2">
+            <div class="left_part">
+              <img src="icon-memory.svg" alt="Kiwi standing on oval" />
+
+              <div class="description_part2">Memory</div>
+            </div>
+            <div class="out_of_100">
+              <span class="black_number">92</span> / 100
+            </div>
+          </div>
+          <div class="card_3">
+            <div class="left_part">
+              <img src="icon-verbal.svg" alt="Kiwi standing on oval" />
+
+              <div class="description_part3">Verbal</div>
+            </div>
+            <div class="out_of_100">
+              <span class="black_number">61</span> / 100
+            </div>
+          </div>
+          <div class="card_4">
+            <div class="left_part">
+              <img src="icon-visual.svg" alt="Kiwi standing on oval" />
+
+              <div class="description_part4">Visual</div>
+            </div>
+            <div class="out_of_100">
+              <span class="black_number">72</span> / 100
+            </div>
+          </div>
+          <button type="button">Continue</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
